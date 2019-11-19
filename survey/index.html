@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Restaurant Survey ">
+    <meta name="keywords" content="JavaScript, HTML, CSS">
+    <meta name="author" content="Anabella Barnett">
+    <title>Restaurant Survey</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<form id="Survey" onsubmit="return false">
+        <h1>Restaurant Survey</h1>
+        
+        <br>
+            
+            <label class="formlabel" for="DateVisited">Date Visited: </label>
+            <input type="DATE" id="DateVisited" name="DateVisited"       
+                   data-rule-required="true"  data-msg-required="Date Visited is Required">
+                   <label for="DateVisited" class="error"></label>
+            <br><br>
+            
+            <label class="formlabel" for="DineInTakeOut"> Dine In/Take Out: </label>
+             <label for="DineInTakeOut">
+                    <input type="radio" name="radio1" id="DineIn" value="D"/>D
+                    <input type="radio" name="radio1" id="TakeOut" value="T" 
+                        data-rule-required="true" data-msg-required="Selection is Required"/>T</label>
+                        <label for="DineInTakeOut" class="error"></label>
+            <br>
+            
+            <label class="formlabel" for="FoodQuality"> Food Quality:</label>
+             <label id="FoodQuality"/>
+                 <input type="radio" name="radio2" id="FoodQualityExcellent" value="4"/>Excellent
+                 <input type="radio" name="radio2" id="FoodQualityGood" value="3"/>Good
+                 <input type="radio" name="radio2" id="FoodQualityAverage"  value="2""/>Average
+                 <input type="radio" name="radio2" id="FoodQualityDissatisfied"  value="1"
+                 data-rule-required="true" data-msg-required="Selection is Required">Dissatisfied</label>
+                 <label for="FoodQuality" class="error"></label>
+             
+                 
+           
+             
+             <br>
+            
+            <label class="formlabel" for="OverallService"> Overall Service:</label>
+             <label for="OverallService" />
+                 <input type="radio" name="radio3" id="OverallServiceExcellent" value="4"/>Excellent
+                 <input type="radio" name="radio3" id="OverallServiceGood" value="3"/>Good
+                 <input type="radio" name="radio3" id="OverallServiceAverage" value="2"/>Average
+                 <input type="radio" name="radio3" id="OverallServiceDissatisfied" value="1"
+                 data-rule-required="true" data-msg-required="Selection is Required">Dissatisfied</label>
+                 <label for="OverallService" class="error"></label>
+         
+                    
+             <br>
+            
+            <label class="formlabel" for="Cleanliness"> Cleanliness:</label>
+             <label for="Cleanliness"/>
+                 <input type="radio" name="radio4" id="CleanlinessExcellent" value="4"/>Excellent
+                 <input type="radio" name="radio4" id="CleanlinessGood" value="3"/>Good
+                 <input type="radio" name="radio4" id="CleanlinessAverage" value="2"/>Average
+                 <input type="radio" name="radio4" id="CleanlinessDissatisfied" value="1"
+                 data-rule-required="true" data-msg-required="Selection is Required">Dissatisfied</label>
+                 <label for="Cleanliness" class="error"></label>
+            
+             
+             <br>
+            
+            <label class="formlabel" for="OrderAccuracy"> Order Accuracy:</label>
+             <label for="OrderAccuracy" />
+                 <input type="radio" name="radio5" id="OrderAccuracyExcellent"value="4"/>Excellent
+                 <input type="radio" name="radio5" id="OrderAccuracyGood" value="3"/>Good
+                 <input type="radio" name="radio5" id="OrderAccuracyAverage" value="2"/>Average
+                 <input type="radio" name="radio5" id="OrderAccuracyDissatisfied" value="1"
+                 data-rule-required="true" data-msg-required="Selection is Required">Dissatisfied</label>
+                 <label for="OrderAccuracy" class="error"></label>
+             
+             
+             <br>
+            
+            <label class="formlabel" for="SpeedofService"> Speed of Service:</label>
+             <label for="SpeedofService"/>
+                 <input type="radio" name="radio6" id="SpeedofServiceExcellent" value="4"/>Excellent
+                 <input type="radio" name="radio6" id="SpeedofServiceGood" value="3"/>Good
+                 <input type="radio" name="radio6" id="SpeedofServiceAverage" value="2"/>Average
+                 <input type="radio" name="radio6" id="SpeedofServiceDissatisfied" value="1"
+                 data-rule-required="true" data-msg-required="Selection is Required">Dissatisfied</label>
+                 <label for="SpeedofService" class="error"></label>
+                 
+            
+            <br>
+            
+            <label class="formlabel" for="Value"> Value:</label>
+             <label for="Value" id="Value">
+                 <input type="radio" name="radio7" id="ValueExcellent" value="4"/>Excellent
+                 <input type="radio" name="radio7" id="ValueGood" value="3"/>Good
+                 <input type="radio" name="radio7" id="ValueAverage" value="2"/>Average
+                 <input type="radio" name="radio7" id="ValueDissatisfied" value="1"
+                 data-rule-required="true" data-msg-required="Selection is Required">Dissatisfied</label>
+             </label>
+             
+             <br>
+            
+            <label class="formlabel" for="OverallExperience"> Overall Experience:</label>
+             <label id="OverallExperience">
+                 <input type="radio" name="radio8" id="OverallExperienceExcellent" value="4"/>Excellent
+                 <input type="radio" name="radio8" id="OverallExperienceGood" value="3"/>Good
+                 <input type="radio" name="radio8" id="OverallExperienceAverage" value="2"/>Average
+                 <input type="radio" name="radio8" id="OverallExperienceDissatisfied" value="1"
+                 data-rule-required="true" data-msg-required="Selection is Required">Dissatisfied</label>
+         
+             
+             <br>
+             
+            <label class="formlabel" id="Comments" for="Comments">Comments, Questions, or Suggestions:</label>
+              <textarea></textarea> 
+              
+                 
+            <br>
+            
+           <label class="formlabel" for="Name">Name:</label>
+                <input type="text" id="Name" name="Name" size="40" maxlength="40"
+                       data-rule-required="true"  data-msg-required="Name is Required" >
+                <label for="Name" class="error"></label>
+             <br>
+             
+            <label class="formlabel" for="Age">Age:</label>
+                <select id="Age">
+                  <option value="<13"><13</option>
+                  <option value="13-17">13-17</option>
+                  <option value="18-24">18-24</option>
+                  <option value="25-34">25-34</option>
+                  <option value="35-44">35-44</option>
+                  <option value="45-54">45-54</option>
+                  <option value=">54">>54</option>
+                </select>
+                
+             <br>
+            <label class="formlabel" for="Email">Email:</label>
+                <input type="text" id="Email" name="Email" size="40" maxlength="40"
+                       data-rule-required="true"  data-msg-required="Email is Required" data-rule-email="true">
+                <label for="Email" class="error"></label>
+                             
+             <br>
+            
+        <input type="submit" value="Submit Survey Form" onclick="CustomerFeedback();">
+</form>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="assets/js/survey.js"></script>
+</body>
+</html>
